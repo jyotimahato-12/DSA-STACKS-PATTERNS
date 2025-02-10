@@ -1,4 +1,10 @@
 
+
+//KEEP ADDING CHARACTERS OF STRING INTO STACK UNTILL U FIND SPACE
+//WHEN U FOUND SPACE THEN STORE THE ELEMENTS OF STACK IN A STRING UNTILL STACK BECOMES EMPTY
+
+
+
 class Solution {
   public:
     // Function to reverse words in a given string.
@@ -25,7 +31,9 @@ class Solution {
             }
             
         }
-        if(!st.empty())
+        if(!st.empty())//THIS part IS BECAUSE LETS SUPPOSE 
+                       //"MY NAME" SO AFTER STORING ALL CHARACTERS OF NAME WE DONT HAVE SPACE
+                       //SO else if part of for loop will not get executed
         {
          while(!st.empty())
         {
